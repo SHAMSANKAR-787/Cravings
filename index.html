@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRAVINGS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="data:image/jpeg;base64,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"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="whole-container">
+    <section>
+      <div class="container">
+        <div class="row fixed-top">
+          <div class="col">
+            <h1 class="text-center pt-3 heading">Cravings</h1>
+          </div>
+          <div class="col">
+            <div class="topnav bg-transparent text-" id="myTopnav">
+              <a href="#carouselExampleIndicators" class="active">Home</a>
+              <a href="#offers">Offers</a>
+              <a href="#contact">Contact</a>
+              <a href="#follow">Follow us</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  <div id="carouselExampleIndicators" class="carousel slide sm-6" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://t3.ftcdn.net/jpg/01/14/51/60/360_F_114516029_Z2B6FO30AB6ZR3v9WHXjpXmJScaiLtzk.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://malayalam.oneindia.com/img/2023/01/beef-1674311015.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.easemytrip.com/media/Blog/India/636977607425696252/636977607425696252QYiiUU.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <section>
+    <div class="container align-center p-5 sm-6" style="width: 100%;" id="offers">
+      <h3 class="text-center p-3 text-underline"><b>Our Offers</b></h3>
+      <div class="row">
+        <div class="col"><div class="card border border-2 border-primary" style="width: 18rem;">
+          <img class="card-img-top" src="https://st4.depositphotos.com/18645588/25027/i/450/depositphotos_250276362-stock-photo-delicious-spicy-chicken-biryani.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-warning fw-bold">Biriyani</h5>
+            <p class="card-text">Tastiest ever.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item text-secondary"> * Chicken</li>
+            <li class="list-group-item text-secondary"> * Beef</li>
+            <li class="list-group-item text-danger fw-bold">Rs : 199/- </li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Order now</a>
+            <a href="#" class="card-link">Add to cart</a>
+          </div>
+        </div></div>
+        <div class="col"><div class="card border border-2 border-primary" style="width: 18rem;">
+          <img class="card-img-top" src="https://images-cdn.9gag.com/photo/aP7Y98V_700b.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Porotta with beef</h5>
+            <p class="card-text">The best combo ever.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item text-danger">Rs : 159/- </li>
+            
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Order now</a>
+            <a href="#" class="card-link">Add to cart</a>
+          </div>
+        </div></div>
+        <div class="col"><div class="card border border-2 border-primary" style="width: 18rem;">
+          <img class="card-img-top" src="https://img.freepik.com/premium-photo/schezwan-noodles-vegetable-hakka-noodles-chow-mein-is-popular-indo-chinese-recipes-served-bowl-plate-with-wooden-chopsticks_466689-46335.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Noodles</h5>
+            <p class="card-text">Favourite  for some reason.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item text-secondary"> * Veg</li>
+            <li class="list-group-item text-secondary"> * Chicken</li>
+            <li class="list-group-item text-danger">Rs : 149/- </li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Order now</a>
+            <a href="#" class="card-link">Add to cart</a>
+          </div>
+        </div></div>
+      </div>
+      <div class="row">
+        <div class="col pt-5"><div class="card border border-2 border-primary" style="width: 18rem;">
+          <img class="card-img-top" src="https://www.awesomecuisine.com/wp-content/uploads/2009/06/Plain-Dosa.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Dosa</h5>
+            <p class="card-text">The classic one.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item text-secondary"> * Masala dosa</li>
+            <li class="list-group-item text-secondary"> * Ghee roast</li>
+            <li class="list-group-item text-danger">Rs : 99/- </li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Order now</a>
+            <a href="#" class="card-link">Add to cart</a>
+          </div>
+        </div></div>
+        <div class="col"><div class="card border border-2 border-primary" style="width: 18rem;">
+          <img class="card-img-top" src="https://www.vegrecipesofindia.com/wp-content/uploads/2020/11/puri.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Puri</h5>
+            <p class="card-text">Crunchy sometimes.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item text-danger">Rs : 99/-</li>
+            
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Order now</a>
+            <a href="#" class="card-link">Add to cart</a>
+          </div>
+        </div></div>
+        <div class="col"><div class="card border border-2 border-primary" style="width: 18rem;">
+          <img class="card-img-top" src="https://c2.staticflickr.com/6/5761/30693798450_626dd20ece_z.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Appam</h5>
+            <p class="card-text">The traditional one.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item text-danger">Rs : 99/-</li>
+            
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Order now</a>
+            <a href="#" class="card-link">Add to cart</a>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="container container-footer sm-6">
+      <div class="row">
+        <div class="col-xs-12-md-4 bg-cyan">
+          <i class="fas fa-hamburger fa-pulse icons text-info"></i>
+          <i class="fas fa-hotdog fa-spin icons text-danger"></i>
+          <i class="fas fa-ice-cream fa-spin icons text-success"></i><br>
+          <h3 class="des pl-2 text-primary">The best place to relax and be calm</h3>
+          <h3 class="des pl-2 text-success">Take away good memories and tummy full of yummy <br>food.</h3><br><br>
+          <h3 class="des pl-2 text-warning">Always here to serve you bettter..</h3>
+
+        </div>
+        <div class="col pt-5" id="contact">
+          <h1 class="contact text-warning">Contact us</h1>
+          <form method="post" name="Form" onsubmit="return validateForm()" action="">
+            <input type="text" placeholder="Enter your name" name="answer_a" id="a" required>
+            <input type="email" placeholder="Enter your mail id" name="answer_b" id="b" required><br><br>
+            <textarea name="answer_c" id="c" cols="30" rows="2" placeholder="Feel free to write..." required></textarea>
+            <input type="submit" value="submit" class="submit-button">
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section >
+    <div class="row sm-6">
+      <div class="col p-5" id="follow">
+        <h2>Be in touch with us on</h2>
+        <i class="fa-brands fa-instagram fa-spin fa-spin-reverse icons"></i>
+        <i class="fa-brands fa-facebook fa-bounce icons"></i>
+        <i class="fa-brands fa-twitter fa-shake icons"></i>
+        <i class="fa-brands fa-whatsapp fa-fade icons"></i>
+      </div>
+      <div class="col pt-5 text-white p-5">
+        <h3 class="official">copyrights @ <a href="">Shamsankar</a></h3>
+        <h3 class="official"><a href="#">Website</a></h3>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
